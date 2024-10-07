@@ -1,7 +1,6 @@
 //@font-face {
   //font-family: 'Graphik';
-  //src: url('./Graphik-Collection/Graphik Family/Graphik-Medium-Trial.ttf') format('truetype'); 
-//}
+  
 
 //Mobile first
 .header {
@@ -11,20 +10,49 @@
   align-items: center;
   font-family: 'Graphik', sans-serif;
 }
+.navbar-toggler {
+  border-color: #0074c7;
+  border-width: 2px;
+  order: 0;
+} 
 
-.navbar-brand {
-  text-transform: uppercase;
-  
-  img {
-    height: 100px; 
-    width: auto;
+.search-form {
+  position: relative; 
+  order: 1; 
+  display: flex;
+  align-items: center;
+
+  .form-control.search {
+    order:2 ; 
+  }
+  .search-button {
+    position: absolute;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    order: 4;
+    cursor: pointer;
+    .search-icon {
+      height: 25px;
+      width: auto;
+   
+    }
   }
 }
-
 .navbar-collapse {
   display: flex; 
+  order: 3;
+ 
 }
+.navbar-nav {
+  justify-content: flex-start; 
+    text-align: left; 
+  }
 
+img {
+  height: 135px; 
+  width: auto;
+}
 .nav-item {
   margin: 10px 0; 
   color: #0074c7;
@@ -35,17 +63,13 @@
     color: inherit;
     &:hover {
       color: #00497c;
-    }
-    &.active {
-      color: #00497c !important;
+      }
+      &.active {
+        color: #00497c !important;
+      }
     }
   }
-}
 
-.navbar-toggler {
-  border-color: #0074c7;
-  border-width: 2px;
-}
 
 // Media querie pour tablette
 @media (min-width: 768px) {
@@ -65,9 +89,10 @@
   }
 
   .navbar-brand img {
-    height: 120px; 
+    height: 150px; 
   }
-}
+  }
+
 
 // Media querie pour desktop
 @media (min-width: 1024px) {
@@ -81,4 +106,20 @@
   .nav-item {
     margin-right: 60px; 
   }
+ 
+  .search-input {
+    padding-right: 30px; 
+  }
+  
+  .search-button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+    .search-icon {
+      height: 25px; 
+      width: auto;
+    }
+  } 
 }
