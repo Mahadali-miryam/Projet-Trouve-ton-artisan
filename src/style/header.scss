@@ -1,0 +1,84 @@
+//@font-face {
+  //font-family: 'Graphik';
+  //src: url('./Graphik-Collection/Graphik Family/Graphik-Medium-Trial.ttf') format('truetype'); 
+//}
+
+//Mobile first
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Graphik', sans-serif;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  
+  img {
+    height: 100px; 
+    width: auto;
+  }
+}
+
+.navbar-collapse {
+  display: flex; 
+}
+
+.nav-item {
+  margin: 10px 0; 
+  color: #0074c7;
+  font-weight: bold;
+  text-align: center;
+
+  .nav-link {
+    color: inherit;
+    &:hover {
+      color: #00497c;
+    }
+    &.active {
+      color: #00497c !important;
+    }
+  }
+}
+
+.navbar-toggler {
+  border-color: #0074c7;
+  border-width: 2px;
+}
+
+// Media querie pour tablette
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-collapse {
+    display: flex; 
+  }
+
+  .nav-item {
+    margin-right: 40px;
+    margin: 0; 
+  }
+
+  .navbar-brand img {
+    height: 120px; 
+  }
+}
+
+// Media querie pour desktop
+@media (min-width: 1024px) {
+  .navbar-brand img {
+    height: 150px;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .nav-item {
+    margin-right: 60px; 
+  }
+}
