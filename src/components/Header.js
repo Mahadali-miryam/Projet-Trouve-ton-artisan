@@ -5,13 +5,20 @@ import '../style/header.scss';
 const Header =() => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
+      <form className="search-form" role="search">
+            <input className="form-control search" type="search" placeholder="Recherche" aria-label="Recherche"/>
+            <button className="search-button" type="submit">
+              <img src="search.png" alt="Search"className="search-icon" />
+            </button>
+          </form>
+      <div className="container-fluid"> 
         <NavLink className="navbar-brand" to="/">   
             <img src="Logo.png" alt="Logo"/>
         </NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
+        
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -30,7 +37,8 @@ const Header =() => {
               <NavLink className="nav-link" to="/Contact" activeClassName="active">Alimentation</NavLink>
             </li>
           </ul>
-        </div>
+        
+        </div>  
       </div>
     </nav>
   );
