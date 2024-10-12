@@ -25,16 +25,16 @@ const Header =() => {
             <NavLink className="nav-link" aria-current="page" to="/Home" activeClassName="active">Accueil</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Services" activeClassName="active">Batiment</NavLink>
+              <NavLink className="nav-link" to="/Batiment" activeClassName="active">Batiment</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Projects" activeClassName="active">Services</NavLink>
+              <NavLink className="nav-link" to="/Services" activeClassName="active">Services</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Blog" activeClassName="active">Fabrication</NavLink>
+              <NavLink className="nav-link" to="/Fabrication" activeClassName="active">Fabrication</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Contact" activeClassName="active">Alimentation</NavLink>
+              <NavLink className="nav-link" to="/Alimentation" activeClassName="active">Alimentation</NavLink>
             </li>
           </ul>
         
