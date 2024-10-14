@@ -16,17 +16,18 @@
     background-color: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
-    margin: 15px;
+    margin: 30px;
    
   
     h2 {
-        color: #00497c ;
+        color:#0074c7 ;
         font-size: 1.25rem; 
-     
+        margin: 10px;
     }
   
     ol {
       padding-left: 20px;
+      margin-top: 20px;
   
       li {
         margin-bottom: 8px;
@@ -45,19 +46,34 @@
     }
   
     .artisans-du-mois {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-  
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
       .artisan-card {
         width: calc(50% - 20px); 
-        margin: 10px;
+      
       }
     }
   }
   // Media queries ordi
   @media (min-width: 1024px) {
+    .comment-trouver {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 900px; 
+       
+      }
+      ol {
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-left: 100px;
+        li {
+          margin-bottom: 8px;
+          font-size: 1rem; 
+        }
     .artisans-du-mois .artisan-card {
       width: calc(33.333% - 20px); 
     }
   }
+}

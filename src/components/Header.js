@@ -1,12 +1,27 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../style/header.scss';
 
 const Header =() => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Redirige vers une route de recherche, en passant le terme de recherche comme paramètre
+    navigate(`/search?query=${searchTerm}`);
+  };
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <form className="search-form" role="search">
-            <input className="form-control search" type="search" placeholder="Recherche" aria-label="Recherche"/>
+      <form className="search-form" role="search"onSubmit={handleSubmit}>
+            <input className="form-control search" 
+            type="search" 
+            placeholder="Recherche" 
+            aria-label="Recherche"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            />
             <button className="search-button" type="submit">
               <img src="search.png" alt="Search"className="search-icon" />
             </button>
@@ -37,7 +52,6 @@ const Header =() => {
               <NavLink className="nav-link" to="/Alimentation" activeClassName="active">Alimentation</NavLink>
             </li>
           </ul>
-        
         </div>  
       </div>
     </nav>

@@ -8,9 +8,10 @@ h2{
   text-align: center;
   color: #00497c;
   font-weight: bold;
+  margin: 25px;
 }
 .card {
-  width: 100%; 
+  width: 20rem; 
   margin: 10px auto; 
   box-shadow: 0 2px  4px  rgba(19, 38, 113, 0.1); 
   border-radius: 8px;
@@ -27,8 +28,10 @@ h2{
     .card-text {
       font-size: 1rem; 
       margin-bottom: 10px; 
-
-     .stars-yellow .star-svg {
+    
+     .stars-yellow 
+     .star-svg
+     {
         fill: #ffd700; 
         width: 25px; 
         height: 25px; 
@@ -51,17 +54,24 @@ h2{
       }
     }
   }
+  .artisan-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+  }
 }
-
 // Media queries pour les tablettes et les ordinateurs
 @media (min-width: 768px) {
+
   .container.cards { 
     width:calc(50% - 20px); 
     margin: 10px;
     }
-   
+    .artisan-list {
+      justify-content: space-around;
+    }
   }
-
 
 @media (min-width: 1024px) {
   .card {

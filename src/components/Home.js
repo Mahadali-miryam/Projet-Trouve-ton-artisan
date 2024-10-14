@@ -4,6 +4,7 @@ import '../style/artisancards.scss';
 import ArtisansDuMois from '../components/ArtisansDuMois';
 import artisansData from '../artisans.json'; 
 
+
 const Home = () => {
   const [artisans, setArtisans] = useState([]);
 
