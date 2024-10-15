@@ -1,19 +1,22 @@
 import React from "react";
 import ArtisanCards from "./ArtisanCards";
 import '../style/home.scss';
+import artisansData from "../artisans.json";
 
 const ArtisansDuMois = ({ artisans }) => {
-  return (
-  
-<div>
-  <h2>Les Artisans du Mois</h2> 
-    <div className="container">
-      {artisans.map((artisan) => (
-        <ArtisanCards key={artisan.id} artisan={artisan} />
-        ))}
-      </div> 
-    </div>
-  );
-};
+   // Filtre les artisans et garde que ceux avec top=true
+  const artisansFiltres = artisansData.filter(artisan => artisan.top === true);
+
+  return ( 
+    <div>
+      <h2>Les Artisans du Mois</h2> 
+        <div className="container">
+        {artisansFiltres.map((artisan) => (
+          <ArtisanCards key={artisan.id} artisan={artisan} />
+          ))}
+        </div> 
+      </div>
+    );
+  };
 
 export default ArtisansDuMois;
