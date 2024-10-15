@@ -13,8 +13,10 @@ const ArtisanList = () => {
 
   // Filtre les artisans en fonction du terme de recherche
   const filteredArtisans = searchTerm ? artisansData.filter(artisan =>
-    artisan.name.toLowerCase().includes(searchTerm.toLowerCase())
-  ) : artisansData; // Ajoute une condition pour gérer un searchTerm vide
+    artisan.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    artisan.location.toLowerCase().includes(searchTerm.toLowerCase()) || 
+    artisan.specialty.toLowerCase().includes(searchTerm.toLowerCase())
+  ) : artisansData; 
 
   return (
     <div className="artisan-list d-flex flex-wrap justify-content-around">

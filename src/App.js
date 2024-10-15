@@ -10,6 +10,7 @@ import Alimentation from './components/Alimentation';
 import Services from './components/Services';
 import ArtisanDetail from './components/ArtisanDetail';
 import ArtisansList from './components/ArtisansList';
+import Contact from './components/Contact';
 
 const App=() => {
   return (
@@ -25,6 +26,7 @@ const App=() => {
         <Route path="/Fabrication" element={<Fabrication />} />
         <Route path="/Alimentation" element={<Alimentation/>} />
         <Route path="/artisans/:artisanId" element={<ArtisanDetail/>} />
+        <Route path="/contact/:email" element={<Contact />} />
         <Route path="/search" element={<ArtisansList/>} /> 
         <Route path="*" element={<NotFoundPage />} />
 
