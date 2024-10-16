@@ -1,34 +1,44 @@
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  gap: 20px; 
+.container{
+  width: 100%;
 }
-h2{
+.card-header {
+ background-color:#f1f8fc ;
+
+}
+.card-title {
   text-align: center;
   color: #00497c;
-  font-weight: bold;
-  margin: 25px;
+  font-weight: bold; 
+  font-size: 1.25rem; 
+  margin: 20px;
 }
 .card {
-  width: 20rem; 
-  margin: 10px auto; 
+  width: 80%; 
+  margin: 70px auto; 
   box-shadow: 0 2px  4px  rgba(19, 38, 113, 0.1); 
   border-radius: 8px;
 
   .card-body {
     padding: 15px; 
+  }
+
 
 
     .card-title {
       font-size: 1.25rem; 
       margin-bottom: 10px;
     }
-
-    .card-text {
+    
+    .card-title {
+      font-size: 1.25rem; 
+      margin-bottom: 10px;
+    }
+   
+  .card-text {
       font-size: 1rem; 
       margin-bottom: 10px; 
-    
+      font-size: 1rem;
+  }
      .stars-yellow 
      .star-svg
      {
@@ -41,6 +51,7 @@ h2{
     .card-title{
       color: #0074c7;
     } 
+
     .btn-primary-custom {
       display: block;
       width: 100%;
@@ -49,29 +60,38 @@ h2{
       color: #ffffff; 
     
       &:hover {
-        background-color: #00497c 
-
+        background-color: #00497c;
+        color: #ffffff;
       }
     }
-  }
+  
   .artisan-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
     gap: 20px; 
   }
-}
+
 // Media queries pour les tablettes et les ordinateurs
 @media (min-width: 768px) {
 
   .container.cards { 
     width:calc(50% - 20px); 
-    margin: 10px;
+    margin: 10px auto;
+    }
+    .card-text {
+      font-size: 1.25rem; 
     }
     .artisan-list {
       justify-content: space-around;
     }
-  }
+    .card-title{ 
+      font-size: 1.4rem; 
+    }
+    .card-text {
+      font-size: 1.3rem; 
+    }
+}
 
 @media (min-width: 1024px) {
   .card {

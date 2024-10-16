@@ -19,11 +19,11 @@ const ArtisanList = () => {
   ) : artisansData; 
 
   return (
-    <div className="artisan-list d-flex flex-wrap justify-content-around">
+    <section className="artisan-list d-flex flex-wrap justify-content-around">
       {filteredArtisans.map((artisan) => (
         <ArtisanCards key={artisan.id} artisan={artisan} />
       ))}
-    </div>
+    </section>
   );
 };
 

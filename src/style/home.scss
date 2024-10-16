@@ -1,79 +1,104 @@
+body {
+  font-family: 'Graphik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: 'Graphik', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  h1 {
-    color: #00497c ;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 15px;
-    font-size: 1.5rem; 
-  }
+header h1 {
+  color: #00497c;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5rem;
+}
+
+main {
   .comment-trouver {
     background-color: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
     margin: 30px;
-   
+
   
     h2 {
         color:#0074c7 ;
         font-size: 1.25rem; 
-        margin: 10px;
+        margin: 25px;
+        text-align: center;
+        font-weight: 600;
     }
-  
+
     ol {
       padding-left: 20px;
       margin-top: 20px;
-  
+
       li {
         margin-bottom: 8px;
-        font-size: 1rem; 
+        font-size: 1rem;
       }
     }
   }
-  
-  // Media queries tablettes
-  @media (min-width: 768px) {
-    .comment-trouver {
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 720px; 
-     
-    }
-  
-    .artisans-du-mois {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
 
-      .artisan-card {
-        width: calc(50% - 20px); 
-      
-      }
+  .container-cards {
+    text-align: center;
+    color: #00497c;
+  }
+}
+
+// Media queries pour tablettes
+@media (min-width: 768px) {
+
+  header h1 {
+    font-size: 1.7rem;
+    margin: 40px;
+  }
+  main .comment-trouver {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 720px;
+
+    h2 {
+      font-size: 1.5rem; 
+  }
+    ol {
+   margin-left: 5rem;
     }
   }
-  // Media queries ordi
-  @media (min-width: 1024px) {
-    .comment-trouver {
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 900px; 
-       
-      }
-      ol {
-        padding-left: 20px;
-        margin-top: 20px;
-        margin-left: 100px;
-        li {
-          margin-bottom: 8px;
-          font-size: 1rem; 
-        }
-    .artisans-du-mois .artisan-card {
-      width: calc(33.333% - 20px); 
+  
+  main .container-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .artisan-card {
+      width: calc(50% - 20px);
     }
   }
+}
+
+// Media queries pour ordinateurs
+@media (min-width: 1024px) {
+
+  header h1 {
+    font-size: 2rem;
+  }
+  main .comment-trouver {
+    padding: 20px;
+    margin: 20px auto;
+   
+  }
+  h2 {
+    font-size: 2rem; 
+}
+  ol {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+
+    li {
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+  } 
+ 
 }

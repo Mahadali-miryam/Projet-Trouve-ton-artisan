@@ -8,14 +8,14 @@ const ArtisansDuMois = ({ artisans }) => {
   const artisansFiltres = artisansData.filter(artisan => artisan.top === true);
 
   return ( 
-    <div>
+    <section>
       <h2>Les Artisans du Mois</h2> 
         <div className="container">
         {artisansFiltres.map((artisan) => (
           <ArtisanCards key={artisan.id} artisan={artisan} />
           ))}
         </div> 
-      </div>
+      </section>
     );
   };
 

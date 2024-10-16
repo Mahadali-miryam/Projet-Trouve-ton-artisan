@@ -36,7 +36,6 @@ const Contact = () => {
         alert('Erreur lors de l\'envoi du message.');
       }
     } catch (error) {
-      console.error('Erreur lors de l\'envoi du message :', error);
       alert('Erreur lors de l\'envoi du message.');
     }
   };
