@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../style/home.scss';
 import '../style/artisancards.scss';
-import ArtisansDuMois from '../components/ArtisansDuMois';
+import ArtisansDuMois from './ArtisansDuMois';
 import artisansData from '../artisans.json'; 
 
 
@@ -17,8 +17,11 @@ const Home = () => {
 
   return (
     <div>
+      <header>
       <h1>Bienvenue sur Trouve ton Artisan</h1>
-      <div className="comment-trouver">
+      </header>
+      <main>
+      <section className="comment-trouver">
         <h2>Comment trouver mon artisan ?</h2>
         <ol>
           <li>Choisir la catégorie d’artisanat dans le menu.</li>
@@ -26,10 +29,11 @@ const Home = () => {
           <li>Le contacter via le formulaire de contact.</li>
           <li>Une réponse sera apportée sous 48h.</li>
         </ol>
-      </div>
-      <div className="container-cards">
+      </section>
+      <section className="container-cards">
       <ArtisansDuMois artisans={topArtisans} />
-      </div>
+      </section>
+    </main>
     </div>
   );
 };

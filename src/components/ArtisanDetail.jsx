@@ -14,10 +14,12 @@ const ArtisanDetail = () => {
   }
     
   return (
-    <div className="container">
+    <article className="container">
       <div className="card">
-        <div className="card-body">
+        <header className="card-header">
           <h2 className="card-title">{artisan.name}</h2>
+        </header>
+        <div className="card-body">
           <p className="card-text">Note: <RatingStars note={parseFloat(artisan.note)} className="stars-yellow" /></p>
           <p className="card-text">Spécialité: {artisan.specialty}</p>
           <p className="card-text">Ville: {artisan.location}</p>
@@ -25,10 +27,9 @@ const ArtisanDetail = () => {
           <p className="card-text">E-mail :<Link to={`/contact/${artisan.email}`} rel="noopener noreferrer">Contacter cette artisan</Link></p>
           <p className="card-text">Site web : <a href={artisan.website} target="_blank" rel="noopener noreferrer">{artisan.website}</a></p>
           <p className="card-text">Catégorie : {artisan.category}</p>
-          
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

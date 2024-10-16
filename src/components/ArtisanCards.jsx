@@ -10,8 +10,10 @@ const ArtisanCards = ({ artisan }) => {
 
   return (
     <div className="card">
+    <header className="card-header">
+    <h5 className="card-title">{artisan.name}</h5>
+    </header>
       <div className="card-body">
-        <h5 className="card-title">{artisan.name}</h5>
         <p className="card-text">Note: <RatingStars note={parseFloat(artisan.note)} className="stars-yellow"  /></p> 
         <p className="card-text">Spécialité : {artisan.specialty}</p>
         <p className="card-text">Emplacement : {artisan.location}</p>
