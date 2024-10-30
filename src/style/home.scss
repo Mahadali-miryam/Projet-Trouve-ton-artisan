@@ -20,13 +20,12 @@ main {
     border-radius: 8px;
     margin: 20px;
 
-  
     h2 {
-        color:#0074c7 ;
-        font-size: 1.25rem; 
-        margin: 25px;
-        text-align: center;
-        font-weight: 600;
+      color: #0074c7;
+      font-size: 1.25rem;
+      margin: 25px;
+      text-align: center;
+      font-weight: 600;
     }
 
     ol {
@@ -40,70 +39,59 @@ main {
     }
   }
 
-  .container-cards h2{
+  h2 {
     text-align: center;
-    color:#cd2c2e; 
+    color: #cd2c2e;
     font-weight: bold;
     margin: 40px;
   }
- 
+}
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-// Media queries pour tablettes
-@media (min-width: 768px) {
+  .card {
+    width: 100%; // Pleine largeur sur mobile
+    max-width: 350px;
+    margin: 10px auto;
+  }
 
+
+// Media queries pour les tablettes
+@media (min-width: 768px) {
   header h1 {
     font-size: 1.9rem;
     margin: 40px;
   }
+
   main .comment-trouver {
     padding: 20px;
     margin: 20px auto;
     max-width: 720px;
 
     h2 {
-      font-size: 1.5rem; 
-  }
+      font-size: 1.5rem;
+    }
+
     ol {
-   margin-left: 5rem;
+      margin-left: 5rem;
     }
   }
-  
-  main .container-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    .artisan-card {
-      width: calc(50% - 20px);
-     
-    }
-  }
+
+
 }
 
 // Media queries pour ordinateurs
 @media (min-width: 1024px) {
-
   header h1 {
     font-size: 2.3rem;
   }
-  main .comment-trouver h {
-    padding: 20px;
-    margin: 20px auto;
-   
+  .container-card .card {
+    width: calc(33.333% - 20px); // Trois colonnes sur desktop
   }
-  
-  h2 {
-    font-size: 2rem; 
-}
-  ol {
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-left: 100px;
-
-    li {
-      margin-bottom: 8px;
-      font-size: 1rem;
-    }
-  } 
- 
 }

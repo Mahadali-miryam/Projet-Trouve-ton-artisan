@@ -24,12 +24,12 @@ const Header =() => {
             onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button className="search-button" type="submit">
-              <img src="search.png" alt="Search"className="search-icon" />
+              <img src="search.png" alt="icon de recherche"className="search-icon" />
             </button>
         </form>
         <div className="container-fluid"> 
           <NavLink className="navbar-brand" to="/">   
-            <img src="Logo.png" alt="Logo"/>
+            <img src="Logo.png" alt="Logo Trouve ton artisan"/>
           </NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

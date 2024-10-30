@@ -10,7 +10,7 @@ const ArtisansDuMois = ({ artisans }) => {
   return ( 
     <section>
       <h2>Les Artisans du Mois</h2> 
-        <div className="container">
+        <div className="container-card">
         {artisansFiltres.map((artisan) => (
           <ArtisanCards key={artisan.id} artisan={artisan} />
           ))}
