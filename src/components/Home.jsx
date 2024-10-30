@@ -30,7 +30,7 @@ const Home = () => {
           <li>Une réponse sera apportée sous 48h.</li>
         </ol>
       </section>
-      <section className="container-cards">
+      <section className="container-card">
       <ArtisansDuMois artisans={topArtisans} />
       </section>
     </main>

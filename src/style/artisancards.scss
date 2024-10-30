@@ -1,43 +1,32 @@
-.container{
-  width: 100%;
-}
-.card-header {
- background-color:#f1f8fc ;
 
-}
+.card-header {
+  background-color:#f1f8fc ;
+
+ }
 header .card-title {
   text-align: center;
-  color:#0074c7;
+  color:#82b864;
   font-weight: bold; 
   font-size: 1.25rem; 
   margin: 20px;
+  margin-bottom: 10px;
 }
-.card {
-  width: 80%; 
-  margin: 40px auto; 
-  box-shadow: 0 2px  4px  rgba(19, 38, 113, 0.1); 
-  border-radius: 8px;
 
+  .card {
+    width: 100%;
+    max-width:550px;
+    margin: 10px auto;
+  }
   .card-body {
     padding: 15px; 
   }
 
-
-
-    .card-title {
-      font-size: 1.25rem; 
-      margin-bottom: 10px;
-    }
-    
-    .card-title {
-      font-size: 1.25rem; 
-      margin-bottom: 10px;
-    }
-   
-  .card-text {
-      font-size: 1rem; 
-      margin-bottom: 10px; 
-      font-size: 1rem;
+.card-text { 
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  h5{
+    font-size: 0,5rem;
   }
   .stars-yellow 
   .star-svg
@@ -47,17 +36,14 @@ header .card-title {
      height: 25px; 
    }
   
-    }
-    .card-title{
-      color: #0074c7;
-    } 
 
-    .btn-primary-custom {
-      display: block;
-      width: 100%;
-      margin-top: 10px; 
-      background-color: #0074c7; 
-      color: #ffffff; 
+
+  .btn-primary-custom {
+    display: block;
+    width: 100%;
+    margin-top: 10px; 
+    background-color: #0074c7; 
+    color: #ffffff; 
     
       &:hover {
         background-color:#82b864;
@@ -65,26 +51,17 @@ header .card-title {
       }
     }
   
-  .artisan-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    gap: 20px; 
-  }
+ 
 
 // Media queries pour les tablettes et les ordinateurs
 @media (min-width: 768px) {
-
-  .container.cards { 
-    width:calc(50% - 20px); 
-    margin: 10px auto;
-    }
-    .card-text {
-      font-size: 1.25rem; 
-    }
     .artisan-list {
-      justify-content: space-around;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; // espace entre les cartes
+      justify-content: center; // centre les cartes
     }
+
     .card-title{ 
       font-size: 1.4rem; 
     }
@@ -94,7 +71,11 @@ header .card-title {
 }
 
 @media (min-width: 1024px) {
-  .card  {
-    width: calc(33.333% - 40px); 
+  
+  .card-title{ 
+    font-size: 1.5rem; 
+  }
+  .card-text {
+    font-size: 1.4rem; 
   }
 }
