@@ -1,3 +1,44 @@
+# Trouve ton artisan
+
+Ce projet a été développé pour la région Auvergne-Rhône-Alpes avec l'objectif de permettre aux particuliers de trouver facilement un artisan dans leur région et de demander des renseignements, prestations ou tarifs via un formulaire de contact. Le site est conçu pour être accessible à tous, en mettant un accent particulier sur l'expérience utilisateur et en respectant les normes WCAG 2.1 pour l'accessibilité.
+
+## Technologies utilisées
+
+- ReactJS pour la construction de l'interface utilisateur
+- Bootstrap et Sass pour le style
+- EmailJS pour la gestion des envois d'emails via le formulaire de contact
+- JSON pour la récupération dynamique des données des artisans
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir Node.js et npm installés sur votre machine. Ces outils sont nécessaires pour lancer l'application React.
+
+## Installation
+
+Pour mettre en place le projet sur votre machine locale pour le développement et les tests, suivez ces étapes :
+
+1. Clonez le dépôt GitHub sur votre machine :
+
+```bash
+git clone https://github.com/votreUsername/trouve-ton-artisan.git
+```
+
+2. Naviguez dans le dossier du projet :
+
+```bash
+cd trouve-ton-artisan
+```
+
+3. Installez les dépendances du projet :
+
+```bash
+npm install
+```
+
+4. Lancez l'application en mode développement :
+
+```bash
+npm start
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
