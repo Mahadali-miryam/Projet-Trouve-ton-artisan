@@ -24,7 +24,7 @@ const ArtisanDetail = () => {
           <p className="card-text">Spécialité: {artisan.specialty}</p>
           <p className="card-text">Ville: {artisan.location}</p>
           <p className="card-text">A propos : {artisan.about}</p>
-          <p className="card-text">E-mail :<Link to={`/contact/${artisan.email}`} rel="noopener noreferrer">Contacter cette artisan</Link></p>
+          <p className="card-text">E-mail :<Link to={`/contact/${artisan.email}`} rel="noopener noreferrer"> Contacter cette artisan</Link></p>
           <p className="card-text">Site web : <a href={artisan.website} target="_blank" rel="noopener noreferrer">{artisan.website}</a></p>
           <p className="card-text">Catégorie : {artisan.category}</p>
         </div>
