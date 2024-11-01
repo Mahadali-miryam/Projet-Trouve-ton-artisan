@@ -1,16 +1,17 @@
 import React from 'react';
-import { Rating } from 'react-simple-star-rating';
+import StarRatings from 'react-star-ratings';
 
 const RatingStars = ({ note, className }) => {
-  // Convertit la note sur une échelle de 0 à 5 en une échelle de 0 à 100
- const noteArrondie = note * 20;
-
   return (
-    <Rating
-      ratingValue={noteArrondie} 
-      readonly={true} 
-      allowHalfIcon={true} 
-      className={className} 
+    <StarRatings
+      rating={parseFloat(note)} 
+      starRatedColor="gold"       
+      numberOfStars={5}          
+      name="rating"              
+      starDimension="24px"        
+      starSpacing="2px"          
+      isSelectable={false}       
+      className={className}
     />
   );
 };
