@@ -2,15 +2,17 @@ import React, { useState, useEffect } from 'react';
 import '../style/home.scss';
 import '../style/artisancards.scss';
 import ArtisansDuMois from './ArtisansDuMois';
-import artisansData from '../artisans.json'; 
 
 
 const Home = () => {
   const [artisans, setArtisans] = useState([]);
-
+  
   useEffect(() => {
-    // Simule le chargement des données
-    setArtisans(artisansData);
+    // Charge les données depuis le dossier public
+    fetch(`${process.env.PUBLIC_URL}/artisans.json`)
+      .then(response => response.json())
+      .then(data => setArtisans(data))
+      .catch(error => console.error("Erreur de chargement des artisans:", error));
   }, []);
 
   const topArtisans = artisans.slice(0, 3);

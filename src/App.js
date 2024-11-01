@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import NotFoundPage from "./pages/NotFoundPage";
 import Home from "./components/Home";
-import Batiment from "./pages/Batiment";
+import Bâtiment from "./pages/Bâtiment";
 import Fabrication from "./pages/Fabrication";
 import Alimentation from "./pages/Alimentation";
 import Services from "./pages/Services";
@@ -20,7 +20,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
-        <Route path="/Batiment" element={<Batiment />} />
+        <Route path="/Bâtiment" element={<Bâtiment/>} />
         <Route path="/Services" element={<Services />} />
         <Route path="/Fabrication" element={<Fabrication />} />
         <Route path="/Alimentation" element={<Alimentation />} />

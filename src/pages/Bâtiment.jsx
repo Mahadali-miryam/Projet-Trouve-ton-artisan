@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const Batiment =() => {
+const Bâtiment=() => {
   return (
     <div>
 
@@ -10,4 +10,4 @@ const Batiment =() => {
   );
 }
 
-export default Batiment;
+export default Bâtiment;
