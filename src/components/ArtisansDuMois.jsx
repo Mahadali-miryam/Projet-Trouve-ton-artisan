@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ArtisanCards from "./ArtisanCards";
 import '../style/home.scss';
+import '../style/artisansdumois.scss';
 
 const ArtisansDuMois = () => {
   const [artisansFiltres, setArtisansFiltres] = useState([]);
@@ -15,14 +16,14 @@ const ArtisansDuMois = () => {
       .catch(error => console.error("Erreur de chargement des artisans:", error));
   }, []);
 
-  return ( 
-    <section>
-      <h2>Les Artisans du Mois</h2> 
+  return (
+    <section className="artisans-du-mois-section">
+      <h2>Les Artisans du Mois</h2>
       <div className="container-card">
         {artisansFiltres.map((artisan) => (
           <ArtisanCards key={artisan.id} artisan={artisan} />
         ))}
-      </div> 
+      </div>
     </section>
   );
 };
