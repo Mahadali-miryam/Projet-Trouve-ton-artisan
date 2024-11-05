@@ -1,0 +1,76 @@
+//mobile
+.artisans-du-mois-section {
+    .card-header {
+        background-color: #f1f8fc;
+        text-align: center;
+    }
+    
+    .card-title {
+        color: #82b864;
+        font-weight: bold;
+        font-size: 1.5rem; 
+        margin: 15px;
+    }
+
+    .card {
+        width: 90%; 
+        max-width: 350px;
+        margin: 20px auto; 
+        border: 2px solid #82b864;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-text {
+        color: #384050;
+        margin: 5px 0;
+        display: flex; 
+        align-items: center; 
+    }
+
+    .stars-yellow {
+        display: inline-flex; 
+        margin-left: 5px;
+    }
+
+    .btn-primary-custom {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        background-color: #0074c7;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #cd2c2e;
+        }
+    }
+}
+
+// Media queries pour les tablettes et les ordinateurs
+@media (min-width: 768px) {
+    .card {
+      width: 47%;
+    } 
+  
+  
+      .card-title{ 
+        font-size: 1.4rem; 
+      }
+      .card-text {
+        font-size: 1.2rem; 
+      }
+  }
+  
+  @media (min-width: 1024px) {
+    .card {
+      max-width:450px;
+     
+    } 
+    .card-title{ 
+      font-size: 1.5rem; 
+    }
+    .card-text {
+      font-size: 1.3rem; 
+    }
+   
+  }

@@ -3,13 +3,13 @@
     opacity: 0.9;
     padding: 20px 20px;
     color: #fff;
-    margin-left: 10 ;
+    
 
     .footer-content {
         display: flex;
         flex-direction: column; 
-        margin: 0 10px;
-       
+        align-items: center;
+
         .footer-menu {
             text-align: left; 
             width: 100%; 
@@ -22,13 +22,11 @@
        
         h6 {
             font-size: 10px;
-            margin-left: 100px;
             margin-top: -10px;
         }
       }
 
-        .footer-contact {
-            text-align: left; 
+        .footer-contact { 
             address {
                 font-style: normal;
                 line-height: 1.6;
@@ -45,6 +43,7 @@
         height: 1px; 
         background-color:#f1f8fc ; 
         margin: 20px 0; 
+        width: 90%;
       }  
 
         ul {
@@ -68,7 +67,16 @@
       }  
     }
 
-
+    .phone-container {
+        display: flex;
+        align-items: center;
+        gap: 8px; 
+      }
+      
+      .phone-icon {
+        width: 20px;
+        height: 20px;
+      }
     
 
     // Media queries pour tablette

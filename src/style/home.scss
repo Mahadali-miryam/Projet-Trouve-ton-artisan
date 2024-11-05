@@ -1,3 +1,4 @@
+//Mobile first
 body {
   font-family: 'Graphik', sans-serif;
   margin: 0;
@@ -56,15 +57,11 @@ main {
   padding: 20px;
 }
 
-  .card {
-    width: 100%; // Pleine largeur sur mobile
-    max-width: 350px;
-    margin: 10px auto;
-  }
 
 
 // Media queries pour les tablettes
 @media (min-width: 768px) {
+
   header h1 {
     font-size: 1.9rem;
     margin: 40px;
@@ -88,19 +85,21 @@ main {
     }
   }
 
-
+  
 }
 
 // Media queries pour ordinateurs
 @media (min-width: 1024px) {
-  header h1 {
-    font-size: 2.3rem;
+  .container-card {
+    .card {
+      flex: 1 1 calc(33.33% - 20px); 
+      max-width: 500px;
+    }
+    }
+    header h1 {
+      font-size: 2.3rem;
+    }
+    main .comment-trouver li {
+      font-size: 1.3rem; 
+    }
   }
-  main .comment-trouver li {
-    font-size: 1.3rem; 
-  }
-  .container-card .card {
-    width: calc(33.333% - 20px);
-  }
-  
-}

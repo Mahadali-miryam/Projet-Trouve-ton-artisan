@@ -1,3 +1,4 @@
+//Mobile
 .contact-form {
     max-width: 90%;
     margin: 50px auto; 
@@ -19,6 +20,7 @@
     }
   
     input[type="text"],
+    input[type="email"],
     textarea {
       width: 100%; 
       padding: 8px;
@@ -48,8 +50,8 @@
   // Media queries pour ecrans plus grands
   @media (min-width: 768px) {
     .contact-form {
-      max-width: 600px; 
-      padding: 30px;
+      max-width: 500px;
+  
     }
   
     .form {

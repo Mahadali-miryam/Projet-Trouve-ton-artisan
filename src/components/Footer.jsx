@@ -17,7 +17,10 @@ const Footer = () => {
             CS 20033<br/>
             69269 LYON CEDEX 02<br/>
             France<br/>
-            <a href="tel:+33426734000">+33 (0)4 26 73 40 00</a>
+            <span className="phone-container">
+              <img src="phone.png" alt="Icône de téléphone" className="phone-icon" />
+              <a href="tel:+33426734000">+33 (0)4 26 73 40 00</a>
+            </span>
           </address>
         </section>
         <div class="separator"></div> 

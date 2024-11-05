@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Graphik', sans-serif;
   margin: 0;
@@ -6,37 +7,31 @@ body {
 }
 .card-header {
   background-color:#f1f8fc ;
-
+  text-align: center;
  }
+ 
 header .card-title {
   text-align: center;
   color:#82b864;
   font-weight: bold; 
   font-size: 1.25rem; 
-  margin: 20px;
+  margin: 10px;
   margin-bottom: 10px;
 }
 
   .card {
-    width: 100%;
-    max-width:550px;
-    margin: 10px auto;
+    width: 90%;
+    max-width:350px;
+    margin: 20px auto;
   }
   .card-body {
     padding: 15px; 
+    
   }
-
+ 
   h5{
     font-size: 0,5rem;
   }
-  .stars-yellow 
-  .star-svg
-  {
-     fill: #ffd700; 
-     width: 25px; 
-     height: 25px; 
-   }
-  
 
 
   .btn-primary-custom {
@@ -51,17 +46,13 @@ header .card-title {
         color: #ffffff;
       }
     }
-  
- 
 
 // Media queries pour les tablettes et les ordinateurs
 @media (min-width: 768px) {
-    .artisan-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px; 
-      justify-content: center;
-    }
+  .card {
+    width: 47%;
+  } 
+
 
     .card-title{ 
       font-size: 1.4rem; 
@@ -72,11 +63,15 @@ header .card-title {
 }
 
 @media (min-width: 1024px) {
-  
+  .card {
+    max-width:450px;
+   
+  } 
   .card-title{ 
     font-size: 1.5rem; 
   }
   .card-text {
     font-size: 1.3rem; 
   }
+ 
 }

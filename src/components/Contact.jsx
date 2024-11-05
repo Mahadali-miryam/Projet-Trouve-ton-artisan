@@ -35,7 +35,7 @@ export const Contact = () => {
         </div>
         <div>
           <label htmlFor="firstName">Prénom :</label>
-          <input type="text" id="firstName" name="user_name" required />
+          <input type="text" id="firstName" name="first_name" required />
         </div>
         <div>
           <label htmlFor="yourMail">Email :</label>
