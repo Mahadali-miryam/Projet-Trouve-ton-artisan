@@ -29,9 +29,12 @@ const ArtisanDetail = () => {
           <h2 className="card-title">{artisan.name}</h2>
         </header>
         <div className="card-body">
-          <div className="card-text">
-            Note: <RatingStars note={parseFloat(artisan.note) || 0} className="stars-yellow" />
-          </div>
+          <p className="card-text" style={{ display: 'flex', alignItems: 'center' }}>
+            Note: 
+            <span className="stars-yellow" style={{ marginLeft: '5px' }}>
+              <RatingStars note={parseFloat(artisan.note)} />
+            </span>
+          </p>
           <p className="card-text">Spécialité: {artisan.specialty}</p>
           <p className="card-text">Ville: {artisan.location}</p>
           <p className="card-text">À propos : {artisan.about}</p>

@@ -8,14 +8,13 @@
     .card-title {
         color: #82b864;
         font-weight: bold;
-        font-size: 1.5rem; 
-        margin: 15px;
+        font-size: 1.2rem; 
     }
 
     .card {
         width: 90%; 
         max-width: 350px;
-        margin: 20px auto; 
+        margin: 10px auto; 
         border: 2px solid #82b864;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -23,7 +22,7 @@
 
     .card-text {
         color: #384050;
-        margin: 5px 0;
+        margin: 10px 0;
         display: flex; 
         align-items: center; 
     }
@@ -46,31 +45,35 @@
     }
 }
 
-// Media queries pour les tablettes et les ordinateurs
+// Media queries pour les tablettes 
 @media (min-width: 768px) {
+ .artisans-du-mois-section{
     .card {
       width: 47%;
     } 
-  
-  
-      .card-title{ 
-        font-size: 1.4rem; 
-      }
-      .card-text {
-        font-size: 1.2rem; 
-      }
+    .card-title{
+      font-size: 1.3rem; 
+    }
+    .card-text {
+      font-size: 1.2rem; 
+    }
   }
-  
+}
+
+// media queries destop 
   @media (min-width: 1024px) {
+    .artisans-du-mois-section{
     .card {
       max-width:450px;
-     
-    } 
+    }  
     .card-title{ 
-      font-size: 1.5rem; 
+      font-size: 1.4rem; 
+      
+      margin-bottom: px;
     }
     .card-text {
       font-size: 1.3rem; 
+    
     }
-   
   }
+}

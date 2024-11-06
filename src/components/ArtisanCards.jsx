@@ -14,9 +14,10 @@ const ArtisanCards = ({ artisan }) => {
     <h5 className="card-title">{artisan.name}</h5>
     </header>
       <div className="card-body">
-        <p className="card-text">Note  
-          <span className="stars-yellow">
-        <RatingStars note={parseFloat(artisan.note)} />
+      <p className="card-text" style={{ display: 'flex', alignItems: 'center' }}>
+          Note: 
+          <span className="stars-yellow" style={{ marginLeft: '5px' }}>
+            <RatingStars note={parseFloat(artisan.note)} />
           </span>
         </p>
         <p className="card-text">Spécialité : {artisan.specialty}</p>
